@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Test CSS Scroll Snap</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", Helvetica, sans-serif;
+      }
+      .sticky-bar {
+        margin: 0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        /* width: 100%; */
+        padding: 1rem;
+        background-color: #1f1f1f;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .main,
+      .content {
+        height: 100vh;
+      }
+      .main {
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+      }
+      .content {
+        scroll-snap-align: start;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content div {
+        text-align: center;
+      }
+      .content:nth-child(even) {
+        background-color: #d8d7d7;
+      }
+      .content:nth-child(odd) {
+        background-color: #adacac;
+      }
+      pre {
+        text-align: left;
+        padding-left: 1rem;
+      }
+      p {
+        padding: 0 1rem;
+      }
+      .info-wrapper {
+        background-color: #414040;
+        color: white;
+      }
+      .info {
+        text-align: left !important;
+        padding: 1rem;
+        font-size: 14px;
+      }
+      @media (max-width: 568px) {
+        .sticky-bar-wrapper {
+          bottom: 0;
+        }
+        .sticky-bar {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-bar">
+      <span> Testing CSS Scroll Snapping </span>
+      <span> Made by Satshree Shrestha </span>
+    </div>
+    <div class="main">
+      <section class="content">
+        <div>
+          <h2>Page/Section 1</h2>
+          <hr />
+          <p align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat quia inventore repellendus, ex sint ad, perspiciatis non
+            assumenda accusantium dignissimos id aut, consequatur quae!
+            Voluptatem, ex modi! Autem, quo.
+          </p>
+          <div class="info-wrapper">
+            <div class="info">
+              <span>Class of div containing these page/section = "main"</span>
+              <br />
+              <br />
+              <span>Class of these page/section = "content"</span>
+            </div>
+            <pre>
+              <code>
+.main,
+.content {
+  height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  scroll-snap-align: start;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div>
+          <h2>Page/Section 2</h2>
+          <hr />
+          <p align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat quia inventore repellendus, ex sint ad, perspiciatis non
+            assumenda accusantium dignissimos id aut, consequatur quae!
+            Voluptatem, ex modi! Autem, quo.
+          </p>
+          <div class="info-wrapper">
+            <div class="info">
+              <span>Class of div containing these page/section = "main"</span>
+              <br />
+              <br />
+              <span>Class of these page/section = "content"</span>
+            </div>
+            <pre>
+              <code>
+.main,
+.content {
+  height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  scroll-snap-align: start;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div>
+          <h2>Page/Section 3</h2>
+          <hr />
+          <p align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat quia inventore repellendus, ex sint ad, perspiciatis non
+            assumenda accusantium dignissimos id aut, consequatur quae!
+            Voluptatem, ex modi! Autem, quo.
+          </p>
+          <div class="info-wrapper">
+            <div class="info">
+              <span>Class of div containing these page/section = "main"</span>
+              <br />
+              <br />
+              <span>Class of these page/section = "content"</span>
+            </div>
+            <pre>
+              <code>
+.main,
+.content {
+  height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  scroll-snap-align: start;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div>
+          <h2>Page/Section 4</h2>
+          <hr />
+          <p align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat quia inventore repellendus, ex sint ad, perspiciatis non
+            assumenda accusantium dignissimos id aut, consequatur quae!
+            Voluptatem, ex modi! Autem, quo.
+          </p>
+          <div class="info-wrapper">
+            <div class="info">
+              <span>Class of div containing these page/section = "main"</span>
+              <br />
+              <br />
+              <span>Class of these page/section = "content"</span>
+            </div>
+            <pre>
+              <code>
+.main,
+.content {
+  height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  scroll-snap-align: start;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div>
+          <h2>Page/Section 5</h2>
+          <hr />
+          <p align="justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat quia inventore repellendus, ex sint ad, perspiciatis non
+            assumenda accusantium dignissimos id aut, consequatur quae!
+            Voluptatem, ex modi! Autem, quo.
+          </p>
+          <div class="info-wrapper">
+            <div class="info">
+              <span>Class of div containing these page/section = "main"</span>
+              <br />
+              <br />
+              <span>Class of these page/section = "content"</span>
+            </div>
+            <pre>
+              <code>
+.main,
+.content {
+  height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  scroll-snap-align: start;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
